@@ -1,0 +1,26 @@
+{
+  "name": "node-express-gql-seed",
+  "version": "0.0.1",
+  "description": "Seed project for node.js project with Express and GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoltanarvai/node-express-gql-seed.git"
+  },
+  "keywords": [
+    "node",
+    "graphql",
+    "express",
+    "circle-ci",
+    "docker"
+  ],
+  "author": "Zoltan Arvai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zoltanarvai/node-express-gql-seed/issues"
+  },
+  "homepage": "https://github.com/zoltanarvai/node-express-gql-seed#readme"
+}
