@@ -1,10 +1,32 @@
 {
   "name": "node-express-gql-seed",
-  "version": "0.0.1",
-  "description": "Seed project for node.js project with Express and GraphQL",
+  "description": "Seed project for node.js with express, graphql an CI (circle, docker, AWS AKS) setup",
+  "version": "0.0.0",
   "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/mocha": "^2.2.47",
+    "@types/node": "^9.4.0",
+    "@types/sinon": "^4.1.3",
+    "chai": "^4.1.2",
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "mocha": "^5.0.0",
+    "sinon": "^4.2.2",
+    "tsc-watch": "^1.0.16",
+    "typescript": "^2.6.2",
+    "typescript-eslint-parser": "^12.0.0"
+  },
   "scripts": {
-    "test": "npm run test"
+    "dev": "tsc-watch --onSuccess \"node dist/index.js\"",
+    "fix": "eslint src --ext ts --fix",
+    "lint": "eslint src --ext ts",
+    "tsc": "tsc",
+    "test": "tsc && mocha dist/**/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -12,8 +34,8 @@
   },
   "keywords": [
     "node",
-    "graphql",
     "express",
+    "graphql",
     "circle-ci",
     "docker"
   ],
